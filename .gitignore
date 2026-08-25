@@ -1,0 +1,16 @@
+# Ignore virtual environment
+venv/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore environment variables
+.env
+
+# Ignore uploaded files
+uploaded.pdf
+
+# Ignore system files (if on Windows/macOS)
+.DS_Store
+Thumbs.db

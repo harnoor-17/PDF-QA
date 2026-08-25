@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF QA Chatbot</title>
+</head>
+<body>
+    <h1>📄 Keya PDF Chatbot</h1>
+
+    {% if status %}
+        <p><strong>{{ status }}</strong></p>
+    {% endif %}
+
+    <form method="POST" enctype="multipart/form-data">
+        <label>Upload PDF:</label><br>
+        <input type="file" name="pdf_file"><br><br>
+        <input type="submit" value="Upload">
+    </form>
+
+    <hr>
+
+    <form method="POST">
+        <label>Ask a Question:</label><br>
+        <input type="text" name="query" size="60"><br><br>
+        <input type="submit" value="Get Answer">
+    </form>
+
+    {% if answer %}
+        <h3>🔍 Answer:</h3>
+        <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>
